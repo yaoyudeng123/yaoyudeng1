@@ -1,0 +1,31 @@
+{
+	"name": "AzureMySqlTable104",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureMySql110",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureMySqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Name",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Phone",
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"tableName": "`student1`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,16 @@
+{
+	"name": "testyaoyudf",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=yaoyudf;EndpointSuffix=core.chinacloudapi.cn;",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4YTk3OWE0ZS1mZTM3LTQ4NzEtOTFmZi0zNDllY2QyZTI5ZGQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime3",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

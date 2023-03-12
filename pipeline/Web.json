@@ -1,0 +1,142 @@
+{
+	"name": "Web",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://adb-6893141284983028.0.databricks.azure.cn/",
+					"method": "GET",
+					"authentication": {
+						"type": "Basic",
+						"username": "yaoyudeng@mcpod.partner.onmschina.cn",
+						"password": {
+							"type": "SecureString",
+							"value": "**********"
+						}
+					}
+				}
+			},
+			{
+				"name": "Web2",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://portal.azure.cn/#@mcpod.partner.onmschina.cn/resource/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/overview",
+					"method": "GET",
+					"authentication": {
+						"type": "Basic",
+						"username": "yaoyudeng@mcpod.partner.onmschina.cn",
+						"password": {
+							"type": "SecureString",
+							"value": "**********"
+						}
+					}
+				}
+			},
+			{
+				"name": "Web3",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://adb-6893141284983028.0.databricks.azure.cn/api/2.0/clusters/delete",
+					"method": "POST",
+					"headers": {
+						"Content-Type": "text/plain"
+					},
+					"body": {
+						"cluster_id": "1205-102633-jqb5p55m"
+					},
+					"authentication": {
+						"type": "Basic",
+						"username": "yaoyudeng@mcpod.partner.onmschina.cn",
+						"password": {
+							"type": "SecureString",
+							"value": "**********"
+						}
+					}
+				}
+			},
+			{
+				"name": "test",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "http://xf5.eliansun.com:25309/apiDocpolicyJobs/getToken",
+					"method": "POST",
+					"body": {
+						"userName": "hz01",
+						"passWord": "123456"
+					}
+				}
+			},
+			{
+				"name": "test2",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "http://xf5.eliansun.com:25309/apiDocpolicyJobs/getToken",
+					"method": "GET",
+					"authentication": {
+						"type": "Basic",
+						"username": "hz01",
+						"password": {
+							"type": "SecureString",
+							"value": "**********"
+						}
+					}
+				}
+			}
+		],
+		"variables": {
+			"var1": {
+				"type": "Array"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-12-23T07:10:36Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

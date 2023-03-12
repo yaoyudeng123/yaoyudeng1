@@ -1,0 +1,16 @@
+{
+	"name": "AzureMySqlTable0102",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureMySql0102",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureMySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`student`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

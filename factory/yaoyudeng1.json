@@ -1,0 +1,35 @@
+{
+	"name": "yaoyudeng1",
+	"properties": {
+		"globalParameters": {
+			"environment": {
+				"type": "string",
+				"value": "dev"
+			},
+			"firstNameJacky": {
+				"type": "string",
+				"value": "Jacky"
+			},
+			"firstNameJoe": {
+				"type": "string",
+				"value": "Joe"
+			},
+			"firstNameHandy": {
+				"type": "string",
+				"value": "Handy"
+			}
+		}
+	},
+	"location": "chinaeast2",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "280e5b2a-ca65-4f94-8cd5-f5e93a30993b",
+		"tenantId": "954ddad8-66d7-47a8-8f9f-1316152d9587",
+		"userAssignedIdentities": {
+			"/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourcegroups/yaoyu/providers/Microsoft.ManagedIdentity/userAssignedIdentities/yaoyudeng": {
+				"clientId": "3e49ab44-10ea-4671-b74d-7e2935950916",
+				"principalId": "d417f30a-7bc6-4761-aed0-039e20c334f6"
+			}
+		}
+	}
+}

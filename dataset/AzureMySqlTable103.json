@@ -1,0 +1,16 @@
+{
+	"name": "AzureMySqlTable103",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureMySql0109",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureMySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`export_course`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

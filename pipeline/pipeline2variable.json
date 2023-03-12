@@ -1,0 +1,42 @@
+{
+	"name": "pipeline2variable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append variable1",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "TestVariable",
+					"value": "My name is Joe Deng."
+				}
+			},
+			{
+				"name": "Append variable2",
+				"type": "AppendVariable",
+				"dependsOn": [
+					{
+						"activity": "Append variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "TestVariable",
+					"value": "My Name is Jacky."
+				}
+			}
+		],
+		"variables": {
+			"TestVariable": {
+				"type": "Array"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-04-18T05:39:58Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

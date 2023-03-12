@@ -1,0 +1,72 @@
+{
+	"name": "Web1",
+	"properties": {
+		"activities": [
+			{
+				"name": "gateway",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://apistage.huilianyi.com/gateway/report/api/open/report/searchExpenseDetails",
+					"method": "POST",
+					"headers": {
+						"Authorization": "Bearer 8c1c700f-b44d-4126-8853-09d285817d69",
+						"Content-Type": "application/json"
+					},
+					"body": {
+						"language": "zh_cn",
+						"page": 0,
+						"size": 1000,
+						"startDate": "2022-01-01",
+						"endDate": "2022-12-31"
+					},
+					"authentication": {
+						"resource": "https://management.chinacloudapi.cn/",
+						"credential": {
+							"referenceName": "credential1",
+							"type": "CredentialReference"
+						}
+					}
+				}
+			},
+			{
+				"name": "NonGateway",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://apistage.huilianyi.com/report/api/open/report/searchReimbursement",
+					"method": "POST",
+					"headers": {
+						"Authorization": "Bearer 8c1c700f-b44d-4126-8853-09d285817d69"
+					},
+					"body": {
+						"language": "zh_cn",
+						"page": 0,
+						"size": 1000,
+						"startDate": "2022-01-01",
+						"endDate": "2022-12-31"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-02-02T07:57:49Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

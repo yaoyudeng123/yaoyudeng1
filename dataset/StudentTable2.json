@@ -1,0 +1,30 @@
+{
+	"name": "StudentTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Inputsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "ID",
+				"type": "varchar"
+			},
+			{
+				"name": "Phone",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "studentnew"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

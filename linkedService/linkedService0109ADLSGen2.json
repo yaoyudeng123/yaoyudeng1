@@ -1,0 +1,16 @@
+{
+	"name": "linkedService0109ADLSGen2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://yaoyudeng.dfs.core.chinacloudapi.cn/",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmMmM2ODAwYi04YmZiLTQ0MjUtODBhOS04MTM3ZDllYmM5MDQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime7",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

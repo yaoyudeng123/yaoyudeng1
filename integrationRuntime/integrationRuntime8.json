@@ -1,0 +1,7 @@
+{
+	"name": "integrationRuntime8",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Connect to flexible mysql database with private linke enabled"
+	}
+}

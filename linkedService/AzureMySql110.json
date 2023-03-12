@@ -1,0 +1,17 @@
+{
+	"name": "AzureMySql110",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "connect to flexible mysql database with private link enabled.",
+		"annotations": [],
+		"type": "AzureMySql",
+		"typeProperties": {
+			"connectionString": "server=fserver0310.mysql.database.chinacloudapi.cn;port=3306;database=test0310;uid=admin123;sslmode=1;usesystemtruststore=0",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiODdiOGQ0Yi00NmM2LTQ4YzYtOGM0Zi00NTNiZDI3ZDQzM2IiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime8",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
