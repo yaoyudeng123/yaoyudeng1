@@ -15,11 +15,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://yaoyudf.blob.core.chinacloudapi.cn/input/students.csv?comp=tier",
+					"url": "https://yaoyudf.blob.core.chinacloudapi.cn/input/students.csv",
 					"method": "PUT",
 					"headers": {
 						"x-ms-version": "2021-12-02",
-						"x-ms-access-tier": "Cool",
+						"x-ms-access-tier": "Hot",
 						"x-ms-blob-type": "BlockBlob",
 						"Content-Type": "application/json"
 					},
