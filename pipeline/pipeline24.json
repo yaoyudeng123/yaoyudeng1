@@ -30,7 +30,7 @@
 						"referenceName": "StudentCSV",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": true
+					"firstRowOnly": false
 				}
 			}
 		],
