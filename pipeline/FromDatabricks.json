@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "Notebook1",
-				"description": "nb0108forsimpletest",
+				"description": "testforLA",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/yaoyudeng@mcpod.partner.onmschina.cn/nb0108forsimpletest"
+					"notebookPath": "/Users/yaoyudeng@mcpod.partner.onmschina.cn/testforLA"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -28,7 +28,7 @@
 			"name": "Databricks"
 		},
 		"annotations": [],
-		"lastPublishTime": "2023-01-18T05:24:57Z"
+		"lastPublishTime": "2023-05-17T07:45:17Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

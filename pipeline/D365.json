@@ -1,0 +1,93 @@
+{
+	"name": "D365",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data from D365 to SQL server",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DynamicsSource",
+						"query": "<fetch version=\"1.0\" output-format=\"xml-platform\" mapping=\"logical\" distinct=\"false\">\n<entity name=\"account\">\n<attribute name=\"name\" />\n<attribute name=\"primarycontactid\" />\n<attribute name=\"telephone1\" />\n<attribute name=\"accountid\" />\n<order attribute=\"name\" descending=\"true\" />\n</entity>\n</fetch>"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "telephone1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "telephone1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "accountid",
+									"type": "Guid"
+								},
+								"sink": {
+									"name": "accountid",
+									"type": "Guid"
+								}
+							},
+							{
+								"source": {
+									"name": "primarycontactid",
+									"type": "Guid"
+								},
+								"sink": {
+									"name": "primarycontactid",
+									"type": "Guid"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DynamicsEntity1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-06-01T07:15:25Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

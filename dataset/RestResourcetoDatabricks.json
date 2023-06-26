@@ -1,0 +1,25 @@
+{
+	"name": "RestResourcetoDatabricks",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestService1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"list": {
+				"type": "String",
+				"defaultValue": "list"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@concat('/api/2.0/cluster/', dataset().list)",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
