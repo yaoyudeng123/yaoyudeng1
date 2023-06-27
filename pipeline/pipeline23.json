@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": "https://yaoyudf.blob.core.chinacloudapi.cn/input/student.txt?comp=tier",
-					"method": "PUT",
+					"method": "GET",
 					"headers": {
 						"x-ms-version": "2021-12-02",
 						"x-ms-access-tier": "Cool",
