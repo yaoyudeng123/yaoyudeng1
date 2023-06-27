@@ -1,0 +1,18 @@
+{
+	"environment": {
+		"type": "string",
+		"value": "dev"
+	},
+	"firstNameJacky": {
+		"type": "string",
+		"value": "Jacky"
+	},
+	"firstNameJoe": {
+		"type": "string",
+		"value": "Joe"
+	},
+	"firstNameHandy": {
+		"type": "string",
+		"value": "Handy"
+	}
+}

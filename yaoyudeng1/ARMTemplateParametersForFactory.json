@@ -1,0 +1,144 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "yaoyudeng1"
+		},
+		"AzureBatch1_accessKey": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage10_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage1spark_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage4_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage5_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage6_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage7_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage8_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage9_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorageofREST_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricksDeltaLake1_accessToken": {
+			"value": ""
+		},
+		"AzureMySql0102_connectionString": {
+			"value": ""
+		},
+		"AzureMySql0109_connectionString": {
+			"value": ""
+		},
+		"AzureMySql110_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"Dynamics1_servicePrincipalCredential": {
+			"value": ""
+		},
+		"Inputsql_connectionString": {
+			"value": ""
+		},
+		"MongoDbonVM_connectionString": {
+			"value": ""
+		},
+		"Outputsql_connectionString": {
+			"value": ""
+		},
+		"Outputsql_copy_connectionString": {
+			"value": ""
+		},
+		"RestService1_password": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": ""
+		},
+		"inputblob_connectionString": {
+			"value": ""
+		},
+		"linkedService0109ADLSGen2_accountKey": {
+			"value": ""
+		},
+		"outputblob_connectionString": {
+			"value": ""
+		},
+		"test0519foradf_connectionString": {
+			"value": ""
+		},
+		"testyaoyudf_connectionString": {
+			"value": ""
+		},
+		"AzureBatch1_properties_typeProperties_batchUri": {
+			"value": "https://batchacnt0412.chinanorth3.batch.chinacloudapi.cn"
+		},
+		"AzureBatch1_properties_typeProperties_poolName": {
+			"value": "pool0412"
+		},
+		"AzureBatch1_properties_typeProperties_accountName": {
+			"value": "batchacnt0412"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://0519testforadf.dfs.core.chinacloudapi.cn/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://yaoyudeng.dfs.core.chinacloudapi.cn/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0608-063444-j7dgdi50"
+		},
+		"Dynamics1_properties_typeProperties_servicePrincipalId": {
+			"value": "063f5b69-7072-40c6-9eb6-2b1824a3d8fe"
+		},
+		"MongoDbonVM_properties_typeProperties_database": {
+			"value": "nosql"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://adb-4511809501339895.3.databricks.azure.cn/api/2.0/clusters/list"
+		},
+		"RestService1_properties_typeProperties_userName": {
+			"value": "yaoyudeng@mcpod.partner.onmschina.cn"
+		},
+		"linkedService0109ADLSGen2_properties_typeProperties_url": {
+			"value": "https://yaoyudeng.dfs.core.chinacloudapi.cn/"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourceGroups/yaoyu/providers/Microsoft.Storage/storageAccounts/yaoyudf"
+		}
+	}
+}
