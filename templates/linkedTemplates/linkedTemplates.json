@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "yaoyudeng1"
+		},
+		"dataFactory_properties_globalParameters_environment_value": {
+			"value": "dev"
+		},
+		"dataFactory_properties_globalParameters_firstNameJacky_value": {
+			"value": "Jacky"
+		},
+		"dataFactory_properties_globalParameters_firstNameJoe_value": {
+			"value": "Joe"
+		},
+		"dataFactory_properties_globalParameters_firstNameHandy_value": {
+			"value": "Handy"
+		},
+		"dataFactory_location": {
+			"value": "chinaeast2"
+		},
+		"dataFactory_identity_type": {
+			"value": "SystemAssigned,UserAssigned"
+		},
+		"dataFactory_identity_userAssignedIdentities": {
+			"value": {
+				"/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourcegroups/yaoyu/providers/Microsoft.ManagedIdentity/userAssignedIdentities/yaoyudeng": {
+					"clientId": "3e49ab44-10ea-4671-b74d-7e2935950916",
+					"principalId": "d417f30a-7bc6-4761-aed0-039e20c334f6"
+				}
+			}
+		}
+	}
+}
