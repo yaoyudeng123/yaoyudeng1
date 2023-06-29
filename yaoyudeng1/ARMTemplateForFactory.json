@@ -186,6 +186,22 @@
 		"trigger2_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourceGroups/yaoyu/providers/Microsoft.Storage/storageAccounts/yaoyudf"
+		},
+		"default_properties_environment_value": {
+			"type": "string",
+			"defaultValue": "dev"
+		},
+		"default_properties_firstNameJacky_value": {
+			"type": "string",
+			"defaultValue": "Jacky"
+		},
+		"default_properties_firstNameJoe_value": {
+			"type": "string",
+			"defaultValue": "Joe"
+		},
+		"default_properties_firstNameHandy_value": {
+			"type": "string",
+			"defaultValue": "Handy"
 		}
 	},
 	"variables": {
@@ -1703,7 +1719,8 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2023-06-27T08:58:26Z"
 			},
 			"dependsOn": []
 		},
@@ -3101,6 +3118,30 @@
 				"type": "ManagedIdentity",
 				"typeProperties": {
 					"resourceId": "/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourcegroups/yaoyu/providers/Microsoft.ManagedIdentity/userAssignedIdentities/yaoyudeng"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/default')]",
+			"type": "Microsoft.DataFactory/factories/globalparameters",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"environment": {
+					"type": "string",
+					"value": "[parameters('default_properties_environment_value')]"
+				},
+				"firstNameJacky": {
+					"type": "string",
+					"value": "[parameters('default_properties_firstNameJacky_value')]"
+				},
+				"firstNameJoe": {
+					"type": "string",
+					"value": "[parameters('default_properties_firstNameJoe_value')]"
+				},
+				"firstNameHandy": {
+					"type": "string",
+					"value": "[parameters('default_properties_firstNameHandy_value')]"
 				}
 			},
 			"dependsOn": []

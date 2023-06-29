@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "yaoyudeng1"
 		},
+		"test0519foradf_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'test0519foradf'"
+		},
 		"testyaoyudf_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'testyaoyudf'"
@@ -16,6 +20,23 @@
 		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
 	},
 	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/test0519foradf')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('test0519foradf_connectionString')]"
+				},
+				"connectVia": {
+					"referenceName": "integrationRuntime3",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": []
+		},
 		{
 			"name": "[concat(parameters('factoryName'), '/testyaoyudf')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
@@ -944,91 +965,6 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/StudentCSV')]",
 				"[concat(variables('factoryId'), '/datasets/AzureMySqlTable0102')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/Blob to SQL')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Students CSV to SQL",
-						"type": "Copy",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"source": {
-								"type": "DelimitedTextSource",
-								"storeSettings": {
-									"type": "AzureBlobStorageReadSettings",
-									"recursive": true,
-									"enablePartitionDiscovery": false
-								},
-								"formatSettings": {
-									"type": "DelimitedTextReadSettings"
-								}
-							},
-							"sink": {
-								"type": "AzureSqlSink",
-								"writeBehavior": "insert",
-								"sqlWriterUseTableLock": false,
-								"disableMetricsCollection": false
-							},
-							"enableStaging": false,
-							"translator": {
-								"type": "TabularTranslator",
-								"typeConversion": true,
-								"typeConversionSettings": {
-									"allowDataTruncation": true,
-									"treatBooleanAsNumber": false
-								}
-							}
-						},
-						"inputs": [
-							{
-								"referenceName": "StudentCSV",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						],
-						"outputs": [
-							{
-								"referenceName": "StudentTable",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						]
-					}
-				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
-				"parameters": {
-					"firstNameJoe": {
-						"type": "string",
-						"defaultValue": "Joe"
-					}
-				},
-				"variables": {
-					"firstNameHandy": {
-						"type": "String",
-						"defaultValue": "Handy"
-					}
-				},
-				"annotations": [],
-				"lastPublishTime": "2023-01-02T04:12:28Z"
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/StudentCSV')]"
 			]
 		}
 	]

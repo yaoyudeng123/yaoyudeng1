@@ -140,6 +140,18 @@
 		"trigger2_properties_typeProperties_scope": {
 			"value": "/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourceGroups/yaoyu/providers/Microsoft.Storage/storageAccounts/yaoyudf"
 		},
+		"default_properties_environment_value": {
+			"value": "dev"
+		},
+		"default_properties_firstNameJacky_value": {
+			"value": "Jacky"
+		},
+		"default_properties_firstNameJoe_value": {
+			"value": "Joe"
+		},
+		"default_properties_firstNameHandy_value": {
+			"value": "Handy"
+		},
 		"containerUri": {
 			"value": ""
 		},

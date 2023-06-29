@@ -187,6 +187,22 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourceGroups/yaoyu/providers/Microsoft.Storage/storageAccounts/yaoyudf"
 		},
+		"default_properties_environment_value": {
+			"type": "string",
+			"defaultValue": "dev"
+		},
+		"default_properties_firstNameJacky_value": {
+			"type": "string",
+			"defaultValue": "Jacky"
+		},
+		"default_properties_firstNameJoe_value": {
+			"type": "string",
+			"defaultValue": "Joe"
+		},
+		"default_properties_firstNameHandy_value": {
+			"type": "string",
+			"defaultValue": "Handy"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -256,8 +272,17 @@
 					"AzureDataLakeStorage2_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage2_accountKey')]"
 					},
-					"AzureSqlDatabase1_connectionString": {
-						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					"default_properties_environment_value": {
+						"value": "[parameters('default_properties_environment_value')]"
+					},
+					"default_properties_firstNameJacky_value": {
+						"value": "[parameters('default_properties_firstNameJacky_value')]"
+					},
+					"default_properties_firstNameJoe_value": {
+						"value": "[parameters('default_properties_firstNameJoe_value')]"
+					},
+					"default_properties_firstNameHandy_value": {
+						"value": "[parameters('default_properties_firstNameHandy_value')]"
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
@@ -282,6 +307,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzureSqlDatabase1_connectionString": {
+						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
 					},
 					"Dynamics1_servicePrincipalCredential": {
 						"value": "[parameters('Dynamics1_servicePrincipalCredential')]"
@@ -366,9 +394,6 @@
 					"linkedService0109ADLSGen2_accountKey": {
 						"value": "[parameters('linkedService0109ADLSGen2_accountKey')]"
 					},
-					"test0519foradf_connectionString": {
-						"value": "[parameters('test0519foradf_connectionString')]"
-					},
 					"AzureBatch1_properties_typeProperties_batchUri": {
 						"value": "[parameters('AzureBatch1_properties_typeProperties_batchUri')]"
 					},
@@ -403,6 +428,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"test0519foradf_connectionString": {
+						"value": "[parameters('test0519foradf_connectionString')]"
 					},
 					"testyaoyudf_connectionString": {
 						"value": "[parameters('testyaoyudf_connectionString')]"
