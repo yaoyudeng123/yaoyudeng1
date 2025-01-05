@@ -15,8 +15,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://adb-6893141284983028.0.databricks.azure.cn/",
 					"method": "GET",
+					"url": "https://adb-6893141284983028.0.databricks.azure.cn/",
 					"authentication": {
 						"type": "Basic",
 						"username": "yaoyudeng@mcpod.partner.onmschina.cn",
@@ -40,8 +40,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://portal.azure.cn/#@mcpod.partner.onmschina.cn/resource/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/overview",
 					"method": "GET",
+					"url": "https://portal.azure.cn/#@mcpod.partner.onmschina.cn/resource/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/overview",
 					"authentication": {
 						"type": "Basic",
 						"username": "yaoyudeng@mcpod.partner.onmschina.cn",
@@ -65,11 +65,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://adb-6893141284983028.0.databricks.azure.cn/api/2.0/clusters/delete",
 					"method": "POST",
 					"headers": {
 						"Content-Type": "text/plain"
 					},
+					"url": "https://adb-6893141284983028.0.databricks.azure.cn/api/2.0/clusters/delete",
 					"body": {
 						"cluster_id": "1205-102633-jqb5p55m"
 					},
@@ -96,8 +96,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "http://xf5.eliansun.com:25309/apiDocpolicyJobs/getToken",
 					"method": "POST",
+					"url": "http://xf5.eliansun.com:25309/apiDocpolicyJobs/getToken",
 					"body": {
 						"userName": "hz01",
 						"passWord": "123456"
@@ -117,8 +117,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "http://xf5.eliansun.com:25309/apiDocpolicyJobs/getToken",
 					"method": "GET",
+					"url": "http://xf5.eliansun.com:25309/apiDocpolicyJobs/getToken",
 					"authentication": {
 						"type": "Basic",
 						"username": "hz01",

@@ -1,0 +1,26 @@
+{
+	"name": "MySql0102",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "MySql0102 duplicate",
+		"annotations": [],
+		"type": "MySql",
+		"typeProperties": {
+			"server": "flexibleserver010215.mysql.database.chinacloudapi.cn",
+			"port": "3306",
+			"database": "test",
+			"username": "admin123",
+			"sslMode": 1,
+			"useSystemTrustStore": 0,
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "testforADFmysqlopensource",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "testforADFmysqlopensource"
+			},
+			"driverVersion": "v2"
+		}
+	}
+}

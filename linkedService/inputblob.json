@@ -5,8 +5,8 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"connectionString": "DefaultEndpointsProtocol=https;AccountName=yaoyudeng;EndpointSuffix=core.chinacloudapi.cn;",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlNjAyYWJhZS0wZTZlLTQzYzctYTk2Yi03Njg2NTAxZjA4NmIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=yaoyudf;EndpointSuffix=core.chinacloudapi.cn;",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5OWFhNDUwYS1kMmRhLTQ5NDMtODhmNy0zZjdhOWNlNzc0NmUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime3",

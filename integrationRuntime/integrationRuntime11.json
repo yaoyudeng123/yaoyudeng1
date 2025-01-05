@@ -1,0 +1,18 @@
+{
+	"name": "integrationRuntime11",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "chinanorth3",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 8,
+					"timeToLive": 10,
+					"cleanup": false,
+					"customProperties": []
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"name": "trigger4",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Blob to SQL",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"firstNameJoe": "Joe"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-04-03T06:23:00",
+				"endTime": "2024-04-03T08:23:00",
+				"timeZone": "China Standard Time"
+			}
+		}
+	}
+}

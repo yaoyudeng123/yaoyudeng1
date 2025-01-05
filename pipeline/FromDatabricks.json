@@ -16,7 +16,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/yaoyudeng@mcpod.partner.onmschina.cn/testforLA"
+					"notebookPath": "/Users/yaoyudeng@mcpod.partner.onmschina.cn/PythonTest"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
@@ -28,7 +28,7 @@
 			"name": "Databricks"
 		},
 		"annotations": [],
-		"lastPublishTime": "2023-05-17T07:45:17Z"
+		"lastPublishTime": "2024-09-27T13:36:12Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

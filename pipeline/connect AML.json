@@ -1,0 +1,39 @@
+{
+	"name": "connect AML",
+	"properties": {
+		"activities": [
+			{
+				"name": "Machine Learning Execute Pipeline1",
+				"type": "AzureMLExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"experimentName": "test",
+					"mlPipelineParameters": {
+						"time": {
+							"value": "@utcnow()",
+							"type": "Expression"
+						}
+					},
+					"mlParentRunId": "",
+					"mlExecutionType": "pipeline",
+					"mlPipelineId": "0a77f445-258e-4349-9895-e555060b32d8"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureMLService1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-08-02T02:18:40Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

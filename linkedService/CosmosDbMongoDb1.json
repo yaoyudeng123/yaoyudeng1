@@ -1,0 +1,16 @@
+{
+	"name": "CosmosDbMongoDb1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Link to CosmosDB for Mongo API",
+		"annotations": [],
+		"type": "CosmosDbMongoDbApi",
+		"typeProperties": {
+			"connectionString": "mongodb://0607acntnameforcosmosdb:@0607acntnameforcosmosdb.mongo.cosmos.azure.cn:10255/?appname=@0607acntnameforcosmosdb@;tls=true;replicaSet=globaldb;maxIdleTime=2m;retryWrites=false",
+			"account": "0607acntnameforcosmosdb",
+			"database": "TestDatabase",
+			"isServerVersionAbove32": true,
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQzNUUzRDQ5LTI0M0EtNDZGOC1CMzY5LTIzQzBGOUUyNTIyN19hYTcyZGJiYy1mZWMyLTQ1NWItOTU4ZC0yZGQ0MTQ4NjExOTYiDQp9"
+		}
+	}
+}

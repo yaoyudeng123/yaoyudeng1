@@ -1,0 +1,25 @@
+{
+	"name": "trigger5",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Blob to Blob",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 30,
+				"startTime": "2024-04-07T13:05:00",
+				"endTime": "2024-04-08T01:35:00",
+				"timeZone": "China Standard Time"
+			}
+		}
+	}
+}

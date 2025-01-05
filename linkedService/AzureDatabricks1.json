@@ -2,13 +2,20 @@
 	"name": "AzureDatabricks1",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
-		"description": "Links to dbks0317",
+		"description": "Links to dbks0315",
 		"annotations": [],
 		"type": "AzureDatabricks",
 		"typeProperties": {
-			"domain": "https://adb-4511809501339895.3.databricks.azure.cn/",
-			"existingClusterId": "0608-063444-j7dgdi50",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlZGQ3ZmIxNi1kOTcyLTQ0ODQtOWM3Ni01NGU1NTViMDhkYmQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"domain": "https://adb-8781799958170083.3.databricks.azure.cn/",
+			"instancePoolId": "0927-092145-cribs3-pool-8x2ygnfi",
+			"newClusterNumOfWorker": "1",
+			"newClusterSparkEnvVars": {
+				"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+			},
+			"newClusterVersion": "15.4.x-scala2.12",
+			"newClusterInitScripts": [],
+			"clusterOption": "Fixed",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmODcwODVhYy1jYzRjLTRmMzktOGI2Mi0zMjgzNGNmNGQyMzgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime3",

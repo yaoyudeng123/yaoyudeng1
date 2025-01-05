@@ -1,0 +1,16 @@
+{
+	"name": "MySqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MySql104",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`bo_eu_cust_sup_record`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
-				"type": "Lookup",
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -15,25 +15,19 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "DelimitedTextSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
-					},
-					"dataset": {
-						"referenceName": "StudentCSV",
-						"type": "DatasetReference"
-					},
-					"firstRowOnly": false
+					"notebookPath": "/Users/yaoyudeng@mcpod.partner.onmschina.cn/TestPython"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks2",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
-		"annotations": []
-	}
+		"folder": {
+			"name": "Databricks"
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-10-16T04:03:39Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }

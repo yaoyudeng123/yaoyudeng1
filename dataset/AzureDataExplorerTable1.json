@@ -1,0 +1,25 @@
+{
+	"name": "AzureDataExplorerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataExplorer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDataExplorerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"name": "unixtime",
+				"type": "string"
+			}
+		],
+		"typeProperties": {
+			"table": "testdatatime"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

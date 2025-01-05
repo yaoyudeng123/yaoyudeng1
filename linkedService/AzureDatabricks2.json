@@ -1,0 +1,19 @@
+{
+	"name": "AzureDatabricks2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Connect via UMI",
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-8781799958170083.3.databricks.azure.cn",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourceGroups/rgfordatabricks/providers/Microsoft.Databricks/workspaces/dbks0315",
+			"credential": {
+				"referenceName": "credential1",
+				"type": "CredentialReference"
+			},
+			"existingClusterId": "0727-062839-qc25p5u8"
+		}
+	}
+}

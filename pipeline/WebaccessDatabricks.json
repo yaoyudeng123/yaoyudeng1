@@ -15,8 +15,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://adb-6893141284983028.0.databricks.azure.cn/api/2.0/clusters/start",
 					"method": "POST",
+					"url": "https://adb-6893141284983028.0.databricks.azure.cn/api/2.0/clusters/start",
 					"body": {
 						"cluster_id": "0112-051611-qla0xx6g"
 					},

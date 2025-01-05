@@ -1,0 +1,26 @@
+{
+	"name": "AzureDatabricksDeltaLakeDataset2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDatabricksDeltaLake2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "default",
+			"table": "table0515foreh"
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "integer"
+			},
+			{
+				"name": "fname",
+				"type": "string"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

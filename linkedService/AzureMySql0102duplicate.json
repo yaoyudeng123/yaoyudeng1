@@ -1,0 +1,17 @@
+{
+	"name": "AzureMySql0102duplicate",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "AzureMySql0102duplicatefor testing open source mysql linked service",
+		"annotations": [],
+		"type": "AzureMySql",
+		"typeProperties": {
+			"connectionString": "server=flexibleserver010215.mysql.database.chinacloudapi.cn;port=3306;database=test;uid=admin123;sslmode=1;usesystemtruststore=0",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhNzkyY2FmOS01NjFkLTRmOTAtOWI5Ny0xNmQzZTFlYTMyNDQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime3",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

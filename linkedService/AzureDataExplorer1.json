@@ -1,0 +1,12 @@
+{
+	"name": "AzureDataExplorer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataExplorer",
+		"typeProperties": {
+			"endpoint": "https://adx0213.chinanorth3.kusto.chinacloudapi.cn",
+			"database": "Test Database01"
+		}
+	}
+}

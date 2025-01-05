@@ -15,12 +15,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://apistage.huilianyi.com/gateway/report/api/open/report/searchExpenseDetails",
 					"method": "POST",
 					"headers": {
 						"Authorization": "Bearer 8c1c700f-b44d-4126-8853-09d285817d69",
 						"Content-Type": "application/json"
 					},
+					"url": "https://apistage.huilianyi.com/gateway/report/api/open/report/searchExpenseDetails",
 					"body": {
 						"language": "zh_cn",
 						"page": 0,
@@ -50,11 +50,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://apistage.huilianyi.com/report/api/open/report/searchReimbursement",
 					"method": "POST",
 					"headers": {
 						"Authorization": "Bearer 8c1c700f-b44d-4126-8853-09d285817d69"
 					},
+					"url": "https://apistage.huilianyi.com/report/api/open/report/searchReimbursement",
 					"body": {
 						"language": "zh_cn",
 						"page": 0,

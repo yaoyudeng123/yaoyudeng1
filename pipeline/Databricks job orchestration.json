@@ -15,11 +15,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"method": "POST",
 					"url": {
 						"value": "@concat('https://',pipeline().parameters.DatabricksWorkspaceID,'.databricks.azure.cn/api/2.0/jobs/run-now')",
 						"type": "Expression"
 					},
-					"method": "POST",
 					"body": {
 						"job_id": "@pipeline().parameters.JobID",
 						"notebook_params": {
@@ -68,11 +68,11 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"method": "GET",
 								"url": {
 									"value": "@concat('https://',pipeline().parameters.DatabricksWorkspaceID,'.databricks.azure.cn/api/2.1/jobs/runs/get?run_id=',activity('Execute Jobs API').output.run_id)",
 									"type": "Expression"
 								},
-								"method": "GET",
 								"authentication": {
 									"type": "Basic",
 									"username": "yaoyudeng@mcpod.partner.onmschina.cn",
@@ -95,8 +95,6 @@
 								}
 							],
 							"policy": {
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
 								"secureOutput": false,
 								"secureInput": false
 							},

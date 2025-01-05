@@ -5,12 +5,12 @@
 		"annotations": [],
 		"type": "AzureDatabricksDeltaLake",
 		"typeProperties": {
-			"domain": "https://adb-6893141284983028.0.databricks.azure.cn",
-			"clusterId": "1205-102633-jqb5p55m",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmYmQ4MGQ1ZS05NjRhLTRhMDMtOGIxNC1iNDY0ODQ2ODk2YTciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"domain": "https://adb-8781799958170083.3.databricks.azure.cn/",
+			"clusterId": "0913-061042-x4s7h8eb",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzM2QwMjhlNS01YzgyLTRiYzYtYTU4ZC1hODU2Njc0N2Y4ODAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
-			"referenceName": "integrationRuntime7",
+			"referenceName": "integrationRuntime3",
 			"type": "IntegrationRuntimeReference"
 		}
 	}

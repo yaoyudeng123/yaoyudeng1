@@ -1,0 +1,31 @@
+{
+	"name": "ADX",
+	"properties": {
+		"activities": [
+			{
+				"name": "Azure Data Explorer Command1",
+				"type": "AzureDataExplorerCommand",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"command": ".show table | take 5",
+					"commandTimeout": "00:20:00"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDataExplorer2",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-06-05T08:20:17Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

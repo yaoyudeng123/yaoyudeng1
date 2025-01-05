@@ -7,10 +7,10 @@
 		"type": "AzureMySql",
 		"typeProperties": {
 			"connectionString": "server=flexibleserver010215.mysql.database.chinacloudapi.cn;port=3306;database=test;uid=admin123;sslmode=1;usesystemtruststore=0",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlYzY2MjA5MC03MTc2LTQ5ZDQtOTFiZC03MWY2MmU4ZDI0ZTEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQzNUUzRDQ5LTI0M0EtNDZGOC1CMzY5LTIzQzBGOUUyNTIyN18xYzA1ZjJjZS03ZWMwLTRjNjYtYjdlYS0xNjI4MzVmNDNjNGYiDQp9"
 		},
 		"connectVia": {
-			"referenceName": "integrationRuntime3",
+			"referenceName": "integrationRuntime11",
 			"type": "IntegrationRuntimeReference"
 		}
 	}

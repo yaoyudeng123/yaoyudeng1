@@ -1,0 +1,21 @@
+{
+	"name": "Parquet3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sftp1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "SftpLocation",
+				"fileName": "757d2c84-3655-47de-9912-e5c8a5d331bb_crm_snr_account_vw.parquet",
+				"folderPath": "/home/admin123"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

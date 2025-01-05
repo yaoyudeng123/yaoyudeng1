@@ -1,0 +1,12 @@
+{
+	"name": "testforADFmysqlopensource",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "testforADFmysqlopensource",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://yaoyudeng.vault.azure.cn/"
+		}
+	}
+}

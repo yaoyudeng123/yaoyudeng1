@@ -1,0 +1,32 @@
+{
+	"name": "AzureMySqlTable105",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureMySql0102",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureMySqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"precision": 36,
+				"scale": 0
+			},
+			{
+				"name": "PROCESSID",
+				"precision": 36,
+				"scale": 0
+			},
+			{
+				"name": "ORGID",
+				"precision": 36,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"tableName": "`test04`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -15,7 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://yaoyudf.blob.core.chinacloudapi.cn/input/student.txt?comp=tier",
 					"method": "GET",
 					"headers": {
 						"x-ms-version": "2021-12-02",
@@ -23,6 +22,7 @@
 						"x-ms-blob-type": "BlockBlob",
 						"Content-Type": "application/json"
 					},
+					"url": "https://yaoyudf.blob.core.chinacloudapi.cn/input/student.txt?comp=tier",
 					"authentication": {
 						"type": "MSI",
 						"resource": "https://storage.azure.com/"

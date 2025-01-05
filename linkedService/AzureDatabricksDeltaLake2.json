@@ -1,0 +1,18 @@
+{
+	"name": "AzureDatabricksDeltaLake2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "test from dbr to event hub",
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLake",
+		"typeProperties": {
+			"domain": "https://adb-8781799958170083.3.databricks.azure.cn",
+			"clusterId": "1219-033907-uvg4h9k7",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5ZDk0YjM3Ni05YTIyLTRjOGItYjU1OS03Y2ZmOGQxZmRiMjIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime3",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

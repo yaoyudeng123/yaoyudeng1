@@ -1,0 +1,47 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "part-0000??????????.parquet",
+				"folderPath": "folder01",
+				"container": "container01"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "tpep_pickup_datetime",
+				"type": "INT96"
+			},
+			{
+				"name": "tpep_dropoff_datetime",
+				"type": "INT96"
+			},
+			{
+				"name": "trip_distance",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "fare_amount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "pickup_zip",
+				"type": "INT32"
+			},
+			{
+				"name": "dropoff_zip",
+				"type": "INT32"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

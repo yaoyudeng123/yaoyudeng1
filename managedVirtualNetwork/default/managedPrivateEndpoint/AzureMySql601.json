@@ -1,0 +1,7 @@
+{
+	"name": "AzureMySql601",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/a7aef648-3d68-4cf0-8c8c-a6eefc80cc1a/resourceGroups/rg0102foradf/providers/Microsoft.DBforMySQL/flexibleServers/flexibleserver010215",
+		"groupId": "mysqlServer"
+	}
+}
