@@ -18,7 +18,7 @@
 			}
 		],
 		"typeProperties": {
-			"table": "testdatatime"
+			"table": "student"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
