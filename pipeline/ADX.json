@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"command": {
-						"value": "@concat('student | where Name == \"', variables('v1'), '\"')",
+						"value": "@concat('student | where Name == \"', pipeline().parameters.Name, '\"')\n",
 						"type": "Expression"
 					},
 					"commandTimeout": "00:20:00"
