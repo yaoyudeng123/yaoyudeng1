@@ -15,7 +15,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"command": ".show table | take 5",
+					"command": {
+						"value": "@{\n    concat(\n    '\n        friends\n        | where Age == \"',variables('v1'),'\"\n    '\n    )\n}",
+						"type": "Expression"
+					},
 					"commandTimeout": "00:20:00"
 				},
 				"linkedServiceName": {
@@ -24,6 +27,20 @@
 				}
 			}
 		],
+		"variables": {
+			"v1": {
+				"type": "Integer",
+				"defaultValue": 27
+			},
+			"v2": {
+				"type": "Integer",
+				"defaultValue": 2
+			},
+			"v3": {
+				"type": "Integer",
+				"defaultValue": 3
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-06-05T08:20:17Z"
 	},
