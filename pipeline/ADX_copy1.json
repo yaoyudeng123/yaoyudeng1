@@ -18,7 +18,7 @@
 					"source": {
 						"type": "AzureDataExplorerSource",
 						"query": {
-							"value": "@concat('student | where Name == \"', pipeline().parameters.Name, '\"')\n",
+							"value": "@concat('student | where Name == \"', variables('v1'), '\"')",
 							"type": "Expression"
 						},
 						"queryTimeout": "01:00:00",
@@ -62,7 +62,7 @@
 		"variables": {
 			"v1": {
 				"type": "String",
-				"defaultValue": "Joe"
+				"defaultValue": "133"
 			},
 			"v2": {
 				"type": "String",
