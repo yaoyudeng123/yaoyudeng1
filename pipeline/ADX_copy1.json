@@ -1,0 +1,58 @@
+{
+	"name": "ADX_copy1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureDataExplorerSource",
+						"query": "student | take 2",
+						"queryTimeout": "01:00:00",
+						"noTruncation": true
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "AzureDataExplorerTable1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"parameters": {
+			"Name": {
+				"type": "string",
+				"defaultValue": "Joe"
+			}
+		},
+		"variables": {
+			"v1": {
+				"type": "String",
+				"defaultValue": "Joe"
+			},
+			"v2": {
+				"type": "String",
+				"defaultValue": "Jacky"
+			},
+			"v3": {
+				"type": "String",
+				"defaultValue": "Handy"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-06-05T08:20:17Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
