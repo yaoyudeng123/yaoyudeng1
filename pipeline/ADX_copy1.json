@@ -18,7 +18,7 @@
 					"source": {
 						"type": "AzureDataExplorerSource",
 						"query": {
-							"value": "@concat('student | where Name == \"', variables('v1'), '\"')",
+							"value": "@concat('student | where Phone contains \"', variables('v1'), '\"')",
 							"type": "Expression"
 						},
 						"queryTimeout": "01:00:00",
