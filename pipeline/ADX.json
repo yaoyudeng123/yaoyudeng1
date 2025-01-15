@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"command": {
-						"value": "@{\n    concat(\n    '\n        student\n        | where Name == \"', variables('v1'), '\"\n    '\n    )\n}",
+						"value": "@concat('student | where Name == \"', variables('v1'), '\"')",
 						"type": "Expression"
 					},
 					"commandTimeout": "00:20:00"
@@ -27,6 +27,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"Name": {
+				"type": "string",
+				"defaultValue": "Joe"
+			}
+		},
 		"variables": {
 			"v1": {
 				"type": "String",
